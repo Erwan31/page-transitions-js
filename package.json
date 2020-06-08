@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Erwan31/page-transitions-js#readme",
   "devDependencies": {
     "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "gsap": "^3.3.1"
   }
 }
