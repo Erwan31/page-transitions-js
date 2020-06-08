@@ -5984,8 +5984,13 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
         height: '90vh',
         top: '10%',
         onComplete: function onComplete() {
+          from.remove();
           done();
         }
+      }).fromTo(to.children[0], 2, {
+        opacity: 0
+      }, {
+        opacity: 1
       });
     }
   }, {
@@ -6044,7 +6049,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51385" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53034" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

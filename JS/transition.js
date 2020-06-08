@@ -11,10 +11,12 @@ class Fade extends Highway.Transition{
          {height: '90vh', 
          top: '10%', 
          onComplete: function() {
+             from.remove();
               done();
          }
         }
         )
+        .fromTo(to.children[0], 2, {opacity: 0}, {opacity: 1});
     }
     out( {from, done }){
         done();
